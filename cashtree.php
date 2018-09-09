@@ -5,9 +5,28 @@ require_once("sdata-modules.php");
  * @Author: Eka Syahwan
  * @Date:   2017-12-11 17:01:26
  * @Last Modified by:   CepzDecoded
- * @Last Modified time: 2018-09-05 10:48:10
 */
 ##############################################################################################################
+/*
+* ;;Cara mendapatkan config di android for newbie.
+* Download Aplikasi "Packet Capture" di Playstore(jika tidak ada) atau Buka jika sudah ada *note: Packet Capture latest version.
+* Buka aplikasi "Packet Capture"
+* Klik icon 'play berwarna hijau yang ada angka 1 nya' (di kanan atas)
+* Lalu cari & pilih aplikasi Cashtree *Otomatis Capture berjalan.
+* Next buka aplikasi Cashtree nya (sampai ter-load full)
+* Lalu buka kembali aplikasi "Packet Capture" nya dan klik icon stop berwarna merah (di kanan atas)
+* buka capture paling atas dan cari config sesuai nama.
+* Contoh form value seperti ini:
+
+POST /api2/ad/list HTTP/1.1
+Host: api.ctree.id
+(bla bla...)
+(bla bla...)
+(bla bla...)
+gpid=^XXX@gmail.com&mmses=XXX&m={}&lng=XXX&lc=XXX&av=XXX&l=XXX&imei=XXX&ov=XXX&pn=XXX&r={}&lat=XXX&gaid=XXX
+
+* Sudah dapat kan tuh tinggal isikan ke variable dibawah ;)
+*/
 
 $config['mmses'] 		= 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 $config['gaid'] 		= 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
